@@ -21,6 +21,7 @@ $app->get('/books', function(Request $request, Response $response, $args) { //RE
     return $response->withHeader('Content-type', 'application/json'); //escreva como json a resposta no header
 
 });
+
     
 $app->post('/books', function(Request $request, Response $response, $args) { //REQUEST (CRIAR)
     $data = $request->getParsedBody(); 
